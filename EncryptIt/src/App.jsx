@@ -31,7 +31,7 @@ function App() {
       <div className='input'>
         <input type="text" id="Plain" value={Text} onChange={(e) => setText(e.target.value)}/>
 
-        <input type="number" name="shift" id="shift" step="1" min={0} max={26} value={shift} onChange={(e) => setShift(e.target.value)}/>
+        <input type="number" name="shift" id="shift" step="1" value={shift} onChange={(e) => setShift(e.target.value)}/>
       </div>
 
       <div>
