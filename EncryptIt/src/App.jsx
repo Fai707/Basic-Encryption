@@ -7,16 +7,17 @@ function App() {
 
   function Encrypt(plaintext) {
     let encrypted = ""
-    const amount = ((Number(shift) % 26) + 26) % 26
 
     for (let i = 0; i < plaintext.length; i++) {
       const code = plaintext.charCodeAt(i)
 
       if (code >= 65 && code <= 90) {
-        encrypted += String.fromCharCode((code - 65 + amount) % 26 + 65)
-      } else if (code >= 97 && code <= 122) {
-        encrypted += String.fromCharCode((code - 97 + amount) % 26 + 97)
-      } else {
+        encrypted += String.fromCharCode((code - 65 + shift) % 26 + 65)
+      }
+      else if (code >= 97 && code <= 122) {
+        encrypted += String.fromCharCode((code - 97 + shift) % 26 + 97)
+      }
+      else {
         encrypted += plaintext[i]
       }
     }
