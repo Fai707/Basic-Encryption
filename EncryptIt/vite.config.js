@@ -8,11 +8,13 @@ export default defineConfig({
     host: '0.0.0.0',
     port: 8081,
     strictPort: true,
+    allowedHosts: ['encrypt.fai707.com'],
   },
 
   preview: {
     host: '0.0.0.0',
     port: 8081,
     strictPort: true,
+    allowedHosts: ['encrypt.fai707.com'],
   },
 })
